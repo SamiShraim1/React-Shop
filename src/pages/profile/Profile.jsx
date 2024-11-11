@@ -45,17 +45,27 @@ export default function Profile() {
     {order.map((e)=>(
     <div key={e._id}>
         <p>the order have {e.products.length} products ,its {e.status} ,the price is {e.finalPrice}$ {e.paymentType} </p>
-        {/* <button disabled={isLoadingForButton}className="btn btn-secondary" onClick={() => cancelOrder(e._id)}>
-            {!isLoadingForButton ? 'remove the order' : <BeatLoader color="#0b0d19" />}
-          </button>  */}
    </div>
     ))}    
-
-
     </>
-    
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const getUserInfo = async () => {
 //     try {
 //       const token = localStorage.getItem('userToken');
@@ -101,3 +111,27 @@ export default function Profile() {
 //         }
 //     })
 //   }
+
+
+
+
+
+
+// return (
+//   <>
+//   <div>Profile</div>
+ 
+//   {order.map((e)=>(
+//   <div key={e._id}>
+//       <p>the order have {e.products.length} products ,its {e.status} ,the price is {e.finalPrice}$ {e.paymentType} </p>
+//       <button disabled={isLoadingForButton}className="btn btn-secondary" onClick={() => cancelOrder(e._id)}>
+//           {!isLoadingForButton ? 'remove the order' : <BeatLoader color="#0b0d19" />}
+//         </button>  
+//  </div>
+//   ))}    
+
+
+//   </>
+  
+// )
+// }

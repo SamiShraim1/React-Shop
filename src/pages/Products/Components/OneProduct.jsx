@@ -61,27 +61,6 @@ export default function Product() {
       setisLoadingForbutton(false);
     }
   };
-  const clearallCart = async () => {
-    setisLoadingForbutton(true);
-    try {
-      const token = localStorage.getItem("userToken");
-      const { data } = await axios.patch(
-        `${import.meta.env.VITE_API_URL}/cart/clear`,
-        {},
-
-        {
-          headers: {
-            Authorization: `Tariq__${token}`,
-          },
-        }
-      );
-      toast.success("Your cart is empty now");
-    } catch (error) {
-      toast.warn(error.response.data.message  || "Something wrong");
-    } finally {
-      setisLoadingForbutton(false);
-    }
-  };
   return <>
          {Product? (
           

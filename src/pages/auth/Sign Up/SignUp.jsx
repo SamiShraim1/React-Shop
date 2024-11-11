@@ -126,6 +126,7 @@ export default function SignUp() {
         />
         <label htmlFor="image1">image</label>
         <input type="file" name="image" id="image1" onChange={handleImageChange} />
+        
         <button className="btn btn-secondary" disabled={isLoading ? "disabled" : null}>
           {!isLoading ? "Register" : <BeatLoader color="#0b0d19" />}
         </button>
